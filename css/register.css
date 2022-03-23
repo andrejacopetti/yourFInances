@@ -3,13 +3,14 @@
 body{
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    background: #2F4F4F
 }
 
 body * {
     box-sizing: border-box;
 }
 
-.main-login{
+.main-registro{
     width: 100vw;
     height: 100vh;
     background: #2F4F4F;
@@ -18,37 +19,10 @@ body * {
     align-items: center;
 }
 
-.left-screen-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.left-screen-login h1{
-    font-size: 3vw;
-    color: #000;
-}
-
-.left-screen-login-image{
-    width: 35vw;
-}
-
-
-
-.right-screen-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.card-login{
-    width: 60%;
+.card-registro{
+    width: 50%;
+    height: 90%;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +33,7 @@ body * {
     box-shadow: 0px -10px 40px #00000056;
 }
 
-.card-login h1{
+.card-registro h1{
     color:rgb(76, 197, 157);
     font-weight: 800;
     margin: 0;
@@ -96,10 +70,11 @@ body * {
     color:#00000056;
 }
 
-.button-login{
-    width: 100px;
+.button-registro{
+    width: 135px;
     padding: 16px 0px;
     margin: 25px;
+    float: left;
     border:none;
     border-radius: 7px;
     outline: none;
@@ -110,30 +85,5 @@ body * {
     background: #2dc87b;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000056;
-}
 
-@media only screen and (max-width: 950px){
-    .card-login{
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .main-login{
-        flex-direction:column;
-    }
-    .left-screen-login h1{
-        display: none;
-    }
-    .left-screen-login{
-        width: 100%;
-        height: auto;
-    }
-
-    .left-screen-login-image{
-        width: 50vw;
-    }
-    .card-login{
-        width: 90%;
-    }
 }
