@@ -118,13 +118,9 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  body.sobre {  
-    background-color: aqua;
-  }
-
-  body.dados{
-    background-color: pink;
-  }
+  /*-----------------------------------------------*/
+  /* Home page */
+  /*-----------------------------------------------*/
 
   .dashboard{
     margin: 3%;
@@ -165,6 +161,7 @@
     height: 100%;
     width: 18%;
     float:left;
+    border-radius: 10px;
   }
 
   .contanier-2{
@@ -173,6 +170,7 @@
     width: 18%;
     margin-left: 4.5%;
     float:left;
+    border-radius: 10px;
   }
 
   .contanier-3{
@@ -181,6 +179,7 @@
     width: 18%;
     margin-left: 4.5%;
     float:left;
+    border-radius: 10px;
   }
 
   .contanier-4{
@@ -189,6 +188,7 @@
     width: 18%;
     margin-left: 4.5%;
     float:left;
+    border-radius: 10px;
   }
 
   .grafics{
@@ -198,18 +198,104 @@
     margin-top: 2.5%;
   }
 
-  .balance{
+  .grafics-earnings{
     float: left;
     background-color: #2f4f4f;
     height: 100%;
     width: 65%;
+    border-style:none;
+    border-radius: 6px;
   }
 
-  .revenue-sources{
+  .grafics-earnings-header{
+    background-color: gray;
+    height: 10%;
+    border-style:none;
+    border-radius: 2px;
+  }
+
+  .grafics-earnings-header h4{
+    text-align:left;
+    text-indent: 20px;
+    color: cyan;
+    padding: 8px;
+  }
+
+  .grafics-revenue-sources{
     float: left;
     background-color: black;
     height: 100%;
     margin-left: 2.5%;
     width: 32.5%;
+    border-style:none;
+    border-radius: 6px;
+  }
+
+  .grafics-revenue-sources-header{
+    background-color: gray;
+    height: 10%;
+    border-style:none;
+    border-radius: 2px;
+  }
+
+  .grafics-revenue-sources-header h4{
+    text-align:left;
+    text-indent: 20px;
+    color: cyan;
+    padding: 8px;
+  }
+
+  /*-----------------------------------------------*/
+  /* About page */
+  /*-----------------------------------------------*/
+
+  body.About {  
+    background-color: aqua;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .About-countanier{
+    background-color: #140056;
+    height: 80vh;
+    width: 130vh;
+    float: center;
+    margin-top:3%;
+    margin-left:17%;
+  }
+
+  .About-countanier-img{
+    background-color: bisque;
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+
+  .About-countanier-text{
+    background-color:#2f4f4f;
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+
+  .About-countanier-text-molding{
+    background-color:#4d27a0;
+    float: center;
+    height: 80%;
+    width: 90%;
+    margin: 5%;
+    margin-top: 12%;
+    border-style:dashed;
+    border-radius: 6px;
+    border-color: aquamarine;
+    text-align: center;
+  }
+
+  /*-----------------------------------------------*/
+  /* Data page */
+  /*-----------------------------------------------*/
+
+  body.Data{
+    background-color: pink;
+    font-family: 'Noto Sans', sans-serif;
   }
  
