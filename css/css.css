@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+  }
+
+  body{
+    background-color: rgb(241, 239, 230);
+    font-family: 'Noto Sans', sans-serif;
   }
   
   a {
@@ -119,8 +126,90 @@
     background-color: pink;
   }
 
+  .dashboard{
+    margin: 3%;
+    margin-left: 7.5%;
+  }
 
-  .saldo{
-      background-color: red;
+  .dashboard a{
+    float:left;
+    margin-left: 79%;
+    margin-top: -2.5%;
+  }
+
+  .dashboard button{
+    background-color: #2f4f4f;
+    border: none;
+    color: white;
+    padding: 8px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .dashboard button:hover{
+    background-color: #416161;
+
+  }
+
+  .contanier{
+    height: 13vh;
+    margin-left: 7.5%;
+    margin-right: 3%;
+  }
+
+  .contanier-1{
+    background-color: blue;
+    height: 100%;
+    width: 18%;
+    float:left;
+  }
+
+  .contanier-2{
+    background-color: green;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+  }
+
+  .contanier-3{
+    background-color: cyan;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+  }
+
+  .contanier-4{
+    background-color: gold;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+  }
+
+  .grafics{
+    height: 50vh;
+    margin-left: 7.5%;
+    margin-right: 3%;
+    margin-top: 2.5%;
+  }
+
+  .balance{
+    float: left;
+    background-color: #2f4f4f;
+    height: 100%;
+    width: 65%;
+  }
+
+  .revenue-sources{
+    float: left;
+    background-color: black;
+    height: 100%;
+    margin-left: 2.5%;
+    width: 32.5%;
   }
  
