@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: rgb(241, 239, 230);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #2f4f4f;
+    height: 8vh;
+  }
+  
+  main {
+    background: url("bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+   
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #2f4f4f;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  /*-----------------------------------------------*/
+  /* Home page */
+  /*-----------------------------------------------*/
+
+  .dashboard{
+    margin: 3%;
+    margin-left: 7.5%;
+  }
+
+  .dashboard a{
+    float:left;
+    margin-left: 79%;
+    margin-top: -2.5%;
+  }
+
+  .dashboard button{
+    background-color: #2f4f4f;
+    border: none;
+    color: white;
+    padding: 8px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .dashboard button:hover{
+    background-color: #416161;
+
+  }
+
+  .contanier{
+    height: 13vh;
+    margin-left: 7.5%;
+    margin-right: 3%;
+  }
+
+  .contanier-1{
+    background-color: blue;
+    height: 100%;
+    width: 18%;
+    float:left;
+    border-radius: 10px;
+  }
+
+  .contanier-2{
+    background-color: green;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+    border-radius: 10px;
+  }
+
+  .contanier-3{
+    background-color: cyan;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+    border-radius: 10px;
+  }
+
+  .contanier-4{
+    background-color: gold;
+    height: 100%;
+    width: 18%;
+    margin-left: 4.5%;
+    float:left;
+    border-radius: 10px;
+  }
+
+  .grafics{
+    height: 50vh;
+    margin-left: 7.5%;
+    margin-right: 3%;
+    margin-top: 2.5%;
+  }
+
+  .grafics-earnings{
+    float: left;
+    background-color: #2f4f4f;
+    height: 100%;
+    width: 65%;
+    border-style:none;
+    border-radius: 6px;
+  }
+
+  .grafics-earnings-header{
+    background-color: gray;
+    height: 10%;
+    border-style:none;
+    border-radius: 2px;
+  }
+
+  .grafics-earnings-header h4{
+    text-align:left;
+    text-indent: 20px;
+    color: cyan;
+    padding: 8px;
+  }
+
+  .grafics-revenue-sources{
+    float: left;
+    background-color: black;
+    height: 100%;
+    margin-left: 2.5%;
+    width: 32.5%;
+    border-style:none;
+    border-radius: 6px;
+  }
+
+  .grafics-revenue-sources-header{
+    background-color: gray;
+    height: 10%;
+    border-style:none;
+    border-radius: 2px;
+  }
+
+  .grafics-revenue-sources-header h4{
+    text-align:left;
+    text-indent: 20px;
+    color: cyan;
+    padding: 8px;
+  }
+
+  /*-----------------------------------------------*/
+  /* About page */
+  /*-----------------------------------------------*/
+
+  body.About {  
+    background-color: aqua;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .About-countanier{
+    background-color: #140056;
+    height: 80vh;
+    width: 130vh;
+    float: center;
+    margin-top:3%;
+    margin-left:17%;
+  }
+
+  .About-countanier-img{
+    background-color: bisque;
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+
+  .About-countanier-text{
+    background-color:#2f4f4f;
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+
+  .About-countanier-text-molding{
+    background-color:#4d27a0;
+    float: center;
+    height: 80%;
+    width: 90%;
+    margin: 5%;
+    margin-top: 12%;
+    border-style:dashed;
+    border-radius: 6px;
+    border-color: aquamarine;
+    text-align: center;
+  }
+
+  /*-----------------------------------------------*/
+  /* Data page */
+  /*-----------------------------------------------*/
+
+  body.Data{
+    background-color: pink;
+    font-family: 'Noto Sans', sans-serif;
+  }
+ 
