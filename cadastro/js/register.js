@@ -12,9 +12,9 @@ function validate(){
 
 
 
-    console.log(regexEmail.test(email))
-    console.log(regexPassword.test(password))
-    console.log(regexPhone.test(phone))
+    console.log(regexEmail.test(email.value))
+    console.log(regexPassword.test(password.value))
+    console.log(regexPhone.test(phone.value))
 
     if(okpassword != password){
         return (false)
