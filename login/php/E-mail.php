@@ -10,7 +10,6 @@
     require 'PHPMailer-master/src/SMTP.php';
     $mail = new PHPMailer();
     // Configuração
-    $mail->IsSMTP();
     $mail->Mailer = "smtp";
     $mail->IsSMTP();
     $mail->CharSet = 'UTF-8';
