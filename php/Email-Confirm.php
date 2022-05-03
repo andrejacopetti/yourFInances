@@ -1,5 +1,25 @@
 <?php
 
+
+    $Email = $_POST("Email");
+    $Senha = $_POST("Senha");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $emaildest = "<script>document.write(email)</script>";
 
     use PHPMailer\PHPMailer\PHPMailer;
