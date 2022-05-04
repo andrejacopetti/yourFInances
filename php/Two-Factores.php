@@ -1,6 +1,6 @@
 <?php
 
-    $Email = $_POST("Email");
-    $Senha = $_POST("Senha");
+    $email = $_POST("Email");
+    $senha = $_POST("Senha");
 
 ?>

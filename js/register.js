@@ -1,6 +1,6 @@
 function validate() {
 
-    var dados = $("form-login").serialize()
+    var dados = $("#form-registro").serialize()
 
     email = document.getElementById("Email")
     password = document.getElementById("Password")
@@ -32,19 +32,21 @@ function validate() {
     }
 
 
-    if(confirmregexEmail == true && confirmregexSenha == true && confirmregexPhone == true &&
-    confirmSenha == true){
-        $.ajax({
 
-            type: "POST",
-            data: dados,
-            url: "../php/Two-Factores.php",
+    $.ajax({
+
+        type: "POST",
+        data: dados,
+        url: "../php/Email-Confirm.php",
+
+
+    })
+
     
-    
-        })
-    }else{
-        alert("Erro! Algum dados invalido!")
-    }
+    //if(confirmregexEmail == true && confirmregexSenha == true && confirmregexPhone == true &&
+    //confirmSenha == true){
+      
+    //}
     
         
     
