@@ -1,4 +1,7 @@
+import { ldadosregister } from 'dadosregister.js'
+
 function validate() {
+    ldadosregister();
 
     var dados = $("#form-registro").serialize()
 

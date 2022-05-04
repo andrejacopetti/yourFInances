@@ -2,16 +2,16 @@
   
   
   
-  $emailbd = $_POST["Email"];
-  $senhabd = $_POST["Password"];
-  $phonebd = $_POST["Phone"];
+  $emailbd = $_POST["EmailCad"];
+  $senhabd = $_POST["PasswordCad"];
+  $phonebd = $_POST["PhoneCad"];
 
 
   $conexao = mysqli_connect("localhost:3307", "root", "root", "bd_seguranca");
 
   
   
-  //mysqli_query($conexao, "INSERT INTO usuario(nome, usuario, senha) VALUES('$nome', '$usuario', '$senha')");
+  mysqli_query($conexao, "INSERT INTO (EmailUsu , SenhaUsu , CelUsu) VALUES('$emailbd', '$senhadb', '$phonedb')");
 
 
   /*$resultado = mysqli_query($conexao, "SELECT * FROM usuario WHERE usuario = '$usuario' AND senha = '$senha' ");
