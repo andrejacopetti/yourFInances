@@ -1,8 +1,8 @@
 <?php
 
-    $email = $_POST["Email"];
-    $senha = $_POST["Senha"];
-    $phone = $_POST["Phone"];
+    $email = $_POST["EmailCad"];
+    $senha = $_POST["SenhaCad"];
+    $phone = $_POST["PhoneCad"];
 
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
