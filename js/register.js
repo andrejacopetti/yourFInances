@@ -1,6 +1,9 @@
-function validate(){
+function validate() {
+
+    var dados = $("form-login").serialize()
+
     email = document.getElementById("Email")
-    password= document.getElementById("Password")
+    password = document.getElementById("Password")
     okpassword = document.getElementById("OKPassword")
     phone = document.getElementById("Phone")
 
@@ -16,18 +19,40 @@ function validate(){
 
 
 
-    console.log(regexEmail.test(email.value))
-    console.log(regexPassword.test(password.value))
-    console.log(regexPhone.test(phone.value))
+    var confirmregexEmail = console.log(regexEmail.test(email.value))
+    var confirmregexSenha = console.log(regexPassword.test(password.value))
+    var confirmregexPhone = console.log(regexPhone.test(phone.value))
 
-    if(okpassword != password){
-        return (false)
+    var confirmSenha = false
+
+    if(password == okpassword){
+        confirmSenha == true
     }else{
-        return (true)
+        confirmSenha == false
     }
 
+
+    if(confirmregexEmail == true && confirmregexSenha == true && confirmregexPhone == true &&
+    confirmSenha == true){
+        $.ajax({
+
+            type: "POST",
+            data: dados,
+            url: "../php/Two-Factores.php",
     
     
+        })
+    }else{
+        alert("Erro! Algum dados invalido!")
+    }
     
+        
+    
+
+    
+
+    
+
+
 
 }
