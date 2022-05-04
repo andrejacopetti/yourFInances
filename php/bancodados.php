@@ -9,6 +9,8 @@
 
   $conexao = mysqli_connect("localhost:3307", "root", "root", "bd_seguranca");
 
+  
+  
   //mysqli_query($conexao, "INSERT INTO usuario(nome, usuario, senha) VALUES('$nome', '$usuario', '$senha')");
 
 
