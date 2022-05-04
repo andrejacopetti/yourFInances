@@ -5,10 +5,10 @@ function validate() {
 
     var dados = $("#form-registro").serialize()
 
-    email = document.getElementById("#EmailCad")
-    password = document.getElementById("#PasswordCad")
-    okpassword = document.getElementById("#OKPassword")
-    phone = document.getElementById("#PhoneCad")
+    email = document.getElementById("EmailCad")
+    password = document.getElementById("PasswordCad")
+    okpassword = document.getElementById("OKPassword")
+    phone = document.getElementById("PhoneCad")
 
     var regexEmail = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
