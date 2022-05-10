@@ -55,8 +55,4 @@ function validate() {
 
     //}
 
-const buttonValidate = document.querySelector(".button-registro")
-
-buttonValidate.onclick = validate()
-
 }
